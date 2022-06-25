@@ -18,7 +18,7 @@ RUN go build -o messager .
 WORKDIR /dist
 
 # 将二进制文件从 /build 目录复制到这里
-RUN cp /build/messager .
+RUN cp /service/messager .
 
 # 声明服务端口
 EXPOSE 8081
